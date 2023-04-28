@@ -1,0 +1,38 @@
+.navbar-container {
+  background-color: black;
+  height: 8vh;
+  width: 100%;
+  position: relative;
+  .title-container {
+    position: relative;
+    left: 10px;
+    top: 8px;
+    width: 150px;
+    .title {
+      width: fit-content;
+      color: white;
+      font-size: 20px;
+      font-weight: 900;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        color: #930f93;
+        font-size: 24px;
+      }
+    }
+  }
+  .create-account-btn {
+    background-color: #930f93;
+    color: white;
+    border: none;
+    height: 36px;
+    padding: 10px;
+    border-radius: 40px;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    cursor: pointer;
+  }
+}

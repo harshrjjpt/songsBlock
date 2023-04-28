@@ -1,0 +1,37 @@
+<div class="hero-container">
+  <div class="shadow-1"></div>
+  <div class="title-container">
+    <h1 class="main-title">
+      Store Your Favorite Tunes on the <span>Blockchain</span> - Access Them
+      Anywhere, Anytime
+    </h1>
+    <button (click)="handleAddPlaylistModal()" class="my-playlist-btn">
+      Let's Get Started
+    </button>
+    <!-- <div class="titles">
+      <h1 class="title">Songs<span>Block</span></h1>
+    </div> -->
+  </div>
+  <div class="right-animation">
+    <div class="animation-container">
+      <div class="loader">
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+      </div>
+    </div>
+  </div>
+  <div
+    (click)="closeModals($event)"
+    *ngIf="isaddPlaylistModal"
+    data-aos="fade-up"
+    data-aos-duration="2000"
+    class="create-playlist-modal-container"
+  >
+    <app-create-playlist></app-create-playlist>
+  </div>
+</div>

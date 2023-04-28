@@ -1,0 +1,24 @@
+<div class="navbar-container">
+  <div class="title-container">
+    <h1 class="title">Songs<span>Block</span></h1>
+  </div>
+  <button
+    *ngIf="!userWalletAddress"
+    (click)="connectWallet()"
+    class="create-account-btn"
+  >
+    Connect Wallet
+  </button>
+  <button
+    *ngIf="userWalletAddress"
+    (click)="connectWallet()"
+    class="create-account-btn"
+  >
+    {{ userWalletAddress.substring(0, 5) }}...{{
+      userWalletAddress.substring(
+        userWalletAddress.length - 5,
+        userWalletAddress.length
+      )
+    }}
+  </button>
+</div>

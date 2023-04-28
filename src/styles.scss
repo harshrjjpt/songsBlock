@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  //   width: 100%;
+  background-color: black;
+}
+
+/**
+*
+* scroll-bar custom styling
+*/
+::-webkit-scrollbar {
+  width: 5px;
+  height: 3px;
+}
+::-webkit-scrollbar-track {
+  background: black;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    rgba(185, 33, 255, 0.25) 0%,
+    #7a0871 100%
+  );
+  border-radius: 4px;
+}
